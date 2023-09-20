@@ -1,4 +1,11 @@
 1. Using loops take 10 inputs from user and find the average of all the numbers.
+```js
+let input= prompt(`input 10 numbers?`)
+for( let i=input;i<=input.length;i++){
+  console.log(i)
+}
+```
+
 
 2. What will be the output of the code below
 
@@ -7,13 +14,38 @@ let i = 0;
 while (i < 3) {
   println('hi');
   i++;
-}
-```
+} 
+//println is not defined
+``` 
 
 3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
 
-4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+```js
+function getEvenSum(max=10){
+  let sum=0
+  for(let i=0;i<=max;i++){
+    if(i % 2 ===0){
+      sum= sum+i
+    }
+  }
+  return sum;
+}
+getEvenSum(6);
+```
 
+4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+```js
+function getOddSum(max=10){
+  let sum =0;
+  for(let i =0; i<=max;i++){
+    if(i % 2 !== 0){
+      sum=sum+i
+    }
+  }
+  return sum
+}
+getOddSum(20);
+```
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
 - If the input value is less than 0 return `not a valid input`
