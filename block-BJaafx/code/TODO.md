@@ -119,4 +119,4 @@ yes a function had multiple return statement but it will return value when the f
 
 10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
 
-for loop is used when the number of iteration is known and while is used when number of iteration is unknown and the statement will run until the condition is proved false. 
+For loop is used when the number of iteration is known and while is used when number of iteration is unknown and the statement will run until the condition is proved false . 
